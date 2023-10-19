@@ -1,0 +1,7 @@
+const grName = document.querySelector('#grName')
+const koalicja = document.querySelector('#koalicja')
+const votesNum = document.querySelector('#votesNum')
+const btnAdd = document.querySelector('button')
+const btnSub = document.querySelector('submit')
+const list = document.querySelector('list')
+const table = document.querySelector('table')

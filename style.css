@@ -1,0 +1,27 @@
+form, footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    margin: 5px;
+}
+table, td, th{
+    border: 1px solid rgb(0, 0, 0);
+    border-spacing: 0;
+    
+}
+.gray{
+    background-color: lightgray;
+}
+.green{
+    background-color: rgb(98, 240, 98);
+}
+.red{
+    background-color: rgb(245, 50, 50);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}

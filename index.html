@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator wyborczy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#">
+        <h1>Kalkulator wyborczy</h1>
+
+        <label for="grName">Nazwa ugrupowania
+            <input type="text" name="grName" id="grName">
+        </label>
+        <label for="koalicja">Czy jest koalicją?
+            <input type="checkbox" name="koalicja" id="koalicja">
+        </label>
+        <label for="votesNum">Ilość głosów
+            <input type="number" name="votesNum" id="votesNum">
+        </label>
+        <label for="buttons">
+        <input type="button" value="Dodaj kolejne ugrupowanie">
+        <input type="submit" value="Sprawdź wynik procentowy">
+        </label>
+    </form>
+    <ol id="list" name="list">
+        <li><b>Partia 1</b> nie jest koalicją, ilość głosów: <b>3480</b></li>
+        <li><b>Partia 2</b> jest koalicją, ilość głosów: <b>2900</b></li>
+        <li><b>Partia 3</b> jest koalicją, ilość głosów: <b>120</b></li>
+    </ol>
+
+    <main>
+        <h2>Wyniki wyborów</h2>
+    <table id="table" name="table">
+        <tr class="gray">
+            <th>LP</th>
+            <th>Nazwa ugrupowania</th>
+            <th>Próg wyborczy(%)</th>
+            <th>Ilość głosów</th>
+            <th>Wynik procentowy</th>
+        </tr>
+        <tr class="green">
+            <td>1</td>
+            <td>Partia 1</td>
+            <td>5</td>
+            <td>3480</td>
+            <td>53.54</td>
+        </tr>
+        <tr class="green">
+            <td>2</td>
+            <td>Partia 2</td>
+            <td>8</td>
+            <td>2900</td>
+            <td>44.62</td>
+        </tr>
+        <tr class="red">
+            <td>3</td>
+            <td>Partia 3</td>
+            <td>8</td>
+            <td>120</td>
+            <td>1.84</td>
+        </tr>
+    </table>
+    </main>
+    <footer>&copy;Michał Cygan</footer>
+    <script src="main.js"></script>
+</body>
+</html>
